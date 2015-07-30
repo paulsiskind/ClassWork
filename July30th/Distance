@@ -1,0 +1,27 @@
+function distancE(car, route){
+  var totalMiles = (car.milesPerGallon * car.gallonsInTank);
+  if (totalMiles >= route.miles){
+  return true;
+  }else{
+  return false;
+  }
+
+
+
+
+}
+var car = {
+  milesPerGallon: 20,
+  gallonsInTank: 12
+};
+var route = {
+  miles: 200,
+  destination: "Boulder",
+  location: "Fancy Land"
+};
+distancE(car, route)
+
+
+
+
+
