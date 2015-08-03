@@ -1,0 +1,13 @@
+var chessMatch = {
+  challenger: 'Gary Kasparov',
+  opposition: 'Bobby Fischer'
+};
+
+console.log(chessMatch);
+
+function nukeTheOpposition() {
+  this.opposition = null;
+}
+
+nukeTheOpposition.apply(chessMatch, []);
+console.log(chessMatch);
