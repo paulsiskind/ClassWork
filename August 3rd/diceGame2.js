@@ -6,6 +6,6 @@ function diceRoll(dice, sides){
         }else{
           array.push(Math.floor(Math.random() * sides+1));
         }
-    }return array;
+    }console.log (array);
 };
 diceRoll(3,5);
