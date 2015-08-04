@@ -1,0 +1,14 @@
+function concat(array1, array2){
+    var result = [];
+    if (typeof array1 === 'string' || typeof array2 === 'string'){
+        result =(array1 +' '+ array2);
+        console.log(result);
+    }else{
+    array1 = array1.join('');
+    array2 = array2.join('');
+    result = array1 + array2;
+    result = result.replace(/[^\w\s]|_/g, "")
+  return (result.split(''));
+}
+}
+concat([1,2,3,4,5,6],[2,3,4,5,6])
